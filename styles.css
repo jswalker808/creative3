@@ -1,0 +1,73 @@
+body {
+  padding: 10px;
+}
+
+#app {
+  margin-top: 25px;
+}
+
+    .title {
+      text-align: center;
+    }
+
+        #janken {
+          font-size: 40px;
+          font-weight: bolder;
+        }
+
+    #arena {
+      background-color: #feffce;
+      margin-top: 50px;
+      padding: 20px;
+      border: solid 3px gray;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+        #arena h4 {
+          margin-bottom: 35px;
+        }
+
+        #arena div {
+          display: inline;
+        }
+
+            #arena div img {
+              border: solid 2px grey;
+              border-radius: 100%;
+              margin-bottom: 35px;
+            }
+
+            /* .row {
+              border: solid 2px black;
+            } */
+            #playerScore {
+              text-align: left !important;
+            }
+
+            #compScore {
+              text-align: right !important;
+            }
+
+        #arena div img:hover {
+          border: solid 5px yellow;
+          -webkit-transition: all 200ms ease;
+          -moz-transition: all 200ms ease;
+          -ms-transition: all 200ms ease;
+          -o-transition: all 200ms ease;
+          transition: all 200ms ease;
+        }
+
+        #arena #paper {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+
+        #arena button {
+          margin: 25px 0 35px 0;
+        }
+
+        span {
+          font-size: 40px;
+          font-weight: bolder;
+        }

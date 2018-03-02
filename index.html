@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock, Paper, Scissors</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container-fluid col-lg-10" id="app">
+      <h1 id="janken" class="title">じゃん拳ぽん！</h1>
+      <h3 class="title">(Rock, Paper, Scissors)</h3>
+      <div id="arena" class="container-fluid col-lg-8">
+        <h4>Pick rock, paper, or scissors:</h4>
+        <div class="row">
+          <div class="col-lg-4">
+            <a><img v-on:click="rock" src="images/rock.jpg" height="150px" width="150px"></a>
+          </div>
+          <div id="paper" class="col-lg-4">
+            <a><img v-on:click="paper" src="images/paper.png" height="150px" width="150px"></a>
+          </div>
+          <div class="col-lg-4">
+            <a><img v-on:click="scissors" src="images/scissors.jpg" height="150px" width="150px"></a>
+          </div>
+        </div>
+        <h6 class="text-danger">{{error}}</h6>
+        <h5>You: <i>{{rpsString}}</i></h5>
+        <h5>Computer: <i>{{compChoiceString}}</i></h5>
+        <h1>{{result}}</h1>
+        <button v-on:click="runGame" type="button" class="btn btn-info">Play a round!</button>
+        <button v-on:click="reset" type="button" class="btn btn-info bg-danger">Reset</button></br>
+        <div class="container-fluid col-lg-12">
+          <div class="row">
+            <div class="col-lg-6">
+              <span id="playerScore">Player: {{playerScore}}</span>
+            </div>
+            <div class="col-lg-6">
+              <span id="compScore">Computer: {{compScore}}</span>
+            </div>
+          </div>
+        </div>
+        <a href="#">Link to GitHub</a>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
