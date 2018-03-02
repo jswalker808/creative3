@@ -1,5 +1,6 @@
 body {
   padding: 10px;
+  text-align: center;
 }
 
 #app {
@@ -71,3 +72,7 @@ body {
           font-size: 40px;
           font-weight: bolder;
         }
+
+a {
+  margin: 10px;
+}
