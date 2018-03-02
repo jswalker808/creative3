@@ -17,7 +17,7 @@ body {
         }
 
     #arena {
-      background-color: #feffce;
+      /* background-color: #feffce; */
       margin-top: 50px;
       padding: 20px;
       border: solid 3px gray;
